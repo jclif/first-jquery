@@ -1,0 +1,19 @@
+.cell{
+  float:left;
+  width:100;
+  height:100;
+  border:1px solid;
+}
+
+.x{
+  background:#EE0000;
+}
+
+.o{
+  background:#0000EE;
+}
+
+.grid{
+  width:306;
+  width:306;
+}
