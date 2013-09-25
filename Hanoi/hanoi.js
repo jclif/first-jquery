@@ -12,12 +12,12 @@
   var Game = Hanoi.Game = function(size) {
     this.size = size
     this.towers = buildTowers(size);
-    this.UI = new Hanoi.HanoiUI(this.towers, this.size);
+    this.UI = new Hanoi.HanoiUI(this);
   };
 
   Game.prototype.isWon = function () {
     // move all the discs to the last tower
-    return (this.towers[2].length == 3) || (this.towers[1].length == 3);
+    return (this.towers[2].length == this.size) || (this.towers[1].length == this.size);
   };
 
   Game.prototype.isValidMove = function (startTowerIdx, endTowerIdx) {
@@ -45,12 +45,8 @@
   };
 
   Game.prototype.run = function () {
-    var game = this;
-
-
-    // get start and end tower
-
-    game.takeTurn(startTowerIdx,endTowerIdx);
+    this.UI.render();
+    this.UI.setClicks();
   };
 
   Game.prototype.takeTurn = function (start,end){

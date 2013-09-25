@@ -6,6 +6,7 @@
   border:1px solid;
   margin-right: auto;
   margin-left: auto;
+  background:grey;
 }
 
 .placeholder{
@@ -13,7 +14,7 @@
 
 .tower{
   float: left;
-  width: 200px;
+  width: 33%;
   height: 100%;
   border:1px solid;
 }
