@@ -1,0 +1,19 @@
+*{
+  box-sizing:border-box;
+}
+
+.disk{
+  border:1px solid;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.placeholder{
+}
+
+.tower{
+  float: left;
+  width: 200px;
+  height: 100%;
+  border:1px solid;
+}
